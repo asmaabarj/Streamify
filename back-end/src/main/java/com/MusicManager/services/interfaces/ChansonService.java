@@ -1,8 +1,8 @@
 package com.MusicManager.services.interfaces;
 
-import com.MusicManager.dtos.AlbumDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.MusicManager.dtos.ChansonDTO;
 
@@ -16,4 +16,8 @@ public interface ChansonService {
     ChansonDTO updateChanson(String id, ChansonDTO chansonDTO);
     void deleteChanson(String id);
 
+    String uploadAudioFile(String chansonId, MultipartFile file);
+    String uploadCoverFile(String chansonId, MultipartFile file);
+    byte[] getAudioFile(String chansonId);
+    byte[] getCoverFile(String chansonId);
 }
