@@ -1,0 +1,1 @@
+2025-01-25 15:42:39 [SpringApplicationShutdownHook] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:30}] to localhost:27017

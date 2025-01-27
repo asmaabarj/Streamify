@@ -8,10 +8,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.MusicManager.dtos.ChansonDTO;
 import com.MusicManager.services.interfaces.ChansonService;
@@ -21,20 +18,19 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/user/songs")
 @RequiredArgsConstructor
-@PreAuthorize("hasAnyAuthority('USER')")
+@PreAuthorize("hasAnyAuthority('USER', 'ADMIN')")
 public class UserChansonController {
     private final ChansonService chansonService;
 
     @GetMapping
-    public ResponseEntity<Page<ChansonDTO>> getAllSongs(
-            @PageableDefault(size = 10, sort = "titre", direction = Sort.Direction.ASC) Pageable pageable) {
+    public ResponseEntity<Page<ChansonDTO>> getAllSongs(Pageable pageable) {
         return ResponseEntity.ok(chansonService.listChansons(pageable));
     }
 
     @GetMapping("/search/titre/{titre}")
     public ResponseEntity<Page<ChansonDTO>> searchByTitre(
             @PathVariable String titre,
-            @PageableDefault(size = 10, sort = "titre", direction = Sort.Direction.ASC) Pageable pageable) {
+            Pageable pageable) {
         return ResponseEntity.ok(chansonService.searchChansonsByTitre(titre, pageable));
     }
 
@@ -46,7 +42,7 @@ public class UserChansonController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ChansonDTO> recupererParId(@PathVariable String id) {
+    public ResponseEntity<ChansonDTO> getSongById(@PathVariable String id) {
         return ResponseEntity.ok(chansonService.finChansonById(id));
     }
 

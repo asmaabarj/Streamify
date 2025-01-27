@@ -1,0 +1,257 @@
+2025-01-23 09:31:26 [restartedMain] INFO  c.M.MusicManagerApplication - Starting MusicManagerApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 10004 (C:\Users\ycode\Streamify\back-end\target\classes started by ycode in C:\Users\ycode\Streamify\back-end)
+2025-01-23 09:31:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-01-23 09:31:26 [restartedMain] DEBUG c.M.MusicManagerApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2025-01-23 09:31:26 [restartedMain] INFO  c.M.MusicManagerApplication - The following 1 profile is active: "prod"
+2025-01-23 09:31:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-23 09:31:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-23 09:31:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-01-23 09:31:27 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 4 MongoDB repository interfaces.
+2025-01-23 09:31:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-23 09:31:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-23 09:31:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-23 09:31:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-01-23 09:31:28 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-23 09:31:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2453 ms
+2025-01-23 09:31:29 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.12+7"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@5533d731], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@3e04c69a]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@44f8615b], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2025-01-23 09:31:29 [cluster-rtt-ClusterId{value='6791fe61d6353c0a17c06828', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2025-01-23 09:31:29 [cluster-ClusterId{value='6791fe61d6353c0a17c06828', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2025-01-23 09:31:29 [cluster-ClusterId{value='6791fe61d6353c0a17c06828', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=53899700}
+2025-01-23 09:31:29 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Role for index information.
+2025-01-23 09:31:29 [restartedMain] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:27017
+2025-01-23 09:31:29 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Chanson for index information.
+2025-01-23 09:31:29 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Album for index information.
+2025-01-23 09:31:29 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.User for index information.
+2025-01-23 09:31:29 [restartedMain] DEBUG c.M.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-23 09:31:29 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-23 09:31:29 [restartedMain] DEBUG o.s.data.mongodb.core.MongoTemplate - Executing count: {} in collection: roles
+2025-01-23 09:31:30 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38d718d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a313301, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e6cb876, org.springframework.security.web.header.HeaderWriterFilter@58d5f23, org.springframework.security.web.authentication.logout.LogoutFilter@67a803b9, com.MusicManager.security.JwtAuthenticationFilter@7fbea95a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71e9d700, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26ff65d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ff43822, org.springframework.security.web.session.SessionManagementFilter@4e990b35, org.springframework.security.web.access.ExceptionTranslationFilter@31d8be1b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e2981b9]
+2025-01-23 09:31:30 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-23 09:31:30 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-23 09:31:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-01-23 09:31:30 [restartedMain] INFO  c.M.MusicManagerApplication - Started MusicManagerApplication in 4.763 seconds (JVM running for 6.252)
+2025-01-23 09:31:30 [RMI TCP Connection(3)-192.168.8.249] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-23 09:31:30 [RMI TCP Connection(3)-192.168.8.249] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-23 09:31:30 [RMI TCP Connection(3)-192.168.8.249] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-01-23 09:44:05 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 59 class path changes (0 additions, 59 deletions, 0 modifications)
+2025-01-23 09:44:05 [Thread-4] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-01-23 09:44:05 [Thread-4] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-23 09:44:05 [Thread-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-01-23 09:44:05 [Thread-4] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [BufferPoolPruner-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-23 09:44:05 [Thread-4] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='6791fe61d6353c0a17c06828', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/sun.nio.ch.Net.poll(Native Method)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:186)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:290)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+ java.base@17.0.12/java.net.Socket$SocketInputStream.read(Socket.java:966)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-23 09:44:05 [Thread-4] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='6791fe61d6353c0a17c06828', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:443)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:64)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:415)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-23 09:44:05 [Thread-4] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [MaintenanceTimer-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-23 09:44:05 [Thread-4] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-23 09:44:05 [Thread-4] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-01-23 09:44:14 [restartedMain] INFO  c.M.MusicManagerApplication - Starting MusicManagerApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 10004 (C:\Users\ycode\Streamify\back-end\target\classes started by ycode in C:\Users\ycode\Streamify\back-end)
+2025-01-23 09:44:14 [restartedMain] DEBUG c.M.MusicManagerApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2025-01-23 09:44:14 [restartedMain] INFO  c.M.MusicManagerApplication - The following 1 profile is active: "prod"
+2025-01-23 09:44:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-01-23 09:44:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 556 ms. Found 4 MongoDB repository interfaces.
+2025-01-23 09:44:18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-23 09:44:18 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-23 09:44:18 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-01-23 09:44:18 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-23 09:44:18 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3461 ms
+2025-01-23 09:44:18 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.12+7"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@728c3edb], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@3e04c69a]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@2fb061f1], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2025-01-23 09:44:18 [cluster-ClusterId{value='67920162d6353c0a17c0682a', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:6}] to localhost:27017
+2025-01-23 09:44:18 [cluster-ClusterId{value='67920162d6353c0a17c0682a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2051200}
+2025-01-23 09:44:18 [cluster-rtt-ClusterId{value='67920162d6353c0a17c0682a', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:7}] to localhost:27017
+2025-01-23 09:44:18 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Album for index information.
+2025-01-23 09:44:18 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Role for index information.
+2025-01-23 09:44:18 [restartedMain] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:8}] to localhost:27017
+2025-01-23 09:44:18 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Chanson for index information.
+2025-01-23 09:44:18 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.User for index information.
+2025-01-23 09:44:19 [restartedMain] DEBUG c.M.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-23 09:44:19 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-23 09:44:19 [restartedMain] DEBUG o.s.data.mongodb.core.MongoTemplate - Executing count: {} in collection: roles
+2025-01-23 09:44:19 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@454eb54e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a1f9dbe, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b7fa6b9, org.springframework.security.web.header.HeaderWriterFilter@57a09c09, org.springframework.security.web.authentication.logout.LogoutFilter@5c5158c4, com.MusicManager.security.JwtAuthenticationFilter@11541505, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b9c9a65, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@780f0bcb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f330b1c, org.springframework.security.web.session.SessionManagementFilter@160a9749, org.springframework.security.web.access.ExceptionTranslationFilter@187504cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a6f312a]
+2025-01-23 09:44:20 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-23 09:44:20 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-01-23 09:44:20 [restartedMain] INFO  c.M.MusicManagerApplication - Started MusicManagerApplication in 5.9 seconds (JVM running for 776.215)
+2025-01-23 09:44:20 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-19 09:48:54 [cluster-ClusterId{value='67920162d6353c0a17c0682a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:288)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+2025-01-19 09:48:54 [cluster-ClusterId{value='67920162d6353c0a17c0682a', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:9}] to localhost:27017
+2025-01-19 09:48:54 [cluster-ClusterId{value='67920162d6353c0a17c0682a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3243500}
+2025-01-20 10:26:00 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 59 class path changes (0 additions, 59 deletions, 0 modifications)
+2025-01-20 10:26:01 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-20 10:26:01 [Thread-11] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='67920162d6353c0a17c0682a', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/sun.nio.ch.Net.poll(Native Method)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:186)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:290)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+ java.base@17.0.12/java.net.Socket$SocketInputStream.read(Socket.java:966)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-20 10:26:01 [Thread-11] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='67920162d6353c0a17c0682a', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:443)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:64)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:415)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-20 10:26:01 [Thread-11] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [MaintenanceTimer-4-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-20 10:26:02 [Thread-11] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:10}] to localhost:27017
+2025-01-20 10:26:15 [restartedMain] INFO  c.M.MusicManagerApplication - Starting MusicManagerApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 10004 (C:\Users\ycode\Streamify\back-end\target\classes started by ycode in C:\Users\ycode\Streamify\back-end)
+2025-01-20 10:26:15 [restartedMain] DEBUG c.M.MusicManagerApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2025-01-20 10:26:15 [restartedMain] INFO  c.M.MusicManagerApplication - The following 1 profile is active: "prod"
+2025-01-20 10:26:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-01-20 10:26:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 4 MongoDB repository interfaces.
+2025-01-20 10:26:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-20 10:26:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-20 10:26:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-01-20 10:26:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-20 10:26:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 810 ms
+2025-01-20 10:26:16 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.12+7"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@4ef8e5cb], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@3e04c69a]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@5965295a], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2025-01-20 10:26:16 [cluster-rtt-ClusterId{value='678e16b8d6353c0a17c0682d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:16}] to localhost:27017
+2025-01-20 10:26:16 [cluster-ClusterId{value='678e16b8d6353c0a17c0682d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:17}] to localhost:27017
+2025-01-20 10:26:16 [cluster-ClusterId{value='678e16b8d6353c0a17c0682d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1852900}
+2025-01-20 10:26:16 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.User for index information.
+2025-01-20 10:26:16 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Album for index information.
+2025-01-20 10:26:16 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Role for index information.
+2025-01-20 10:26:16 [restartedMain] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:18}] to localhost:27017
+2025-01-20 10:26:16 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Chanson for index information.
+2025-01-20 10:26:16 [restartedMain] DEBUG c.M.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-20 10:26:16 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-20 10:26:16 [restartedMain] DEBUG o.s.data.mongodb.core.MongoTemplate - Executing count: {} in collection: roles
+2025-01-20 10:26:16 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43a15d7a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@751a9320, org.springframework.security.web.context.SecurityContextPersistenceFilter@f0040eb, org.springframework.security.web.header.HeaderWriterFilter@7701a896, org.springframework.security.web.authentication.logout.LogoutFilter@7a143d60, com.MusicManager.security.JwtAuthenticationFilter@1205dff8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b72daff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71cd861f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fd0b7a7, org.springframework.security.web.session.SessionManagementFilter@641c5927, org.springframework.security.web.access.ExceptionTranslationFilter@555a3589, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7dc18d66]
+2025-01-20 10:26:16 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-20 10:26:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-01-20 10:26:17 [restartedMain] INFO  c.M.MusicManagerApplication - Started MusicManagerApplication in 1.893 seconds (JVM running for 3324.518)
+2025-01-20 10:26:17 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-20 11:12:14 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 59 class path changes (0 additions, 59 deletions, 0 modifications)
+2025-01-20 11:12:15 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-20 11:12:15 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='678e16b8d6353c0a17c0682d', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/sun.nio.ch.Net.poll(Native Method)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:186)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:290)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+ java.base@17.0.12/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+ java.base@17.0.12/java.net.Socket$SocketInputStream.read(Socket.java:966)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-20 11:12:15 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='678e16b8d6353c0a17c0682d', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:443)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:64)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:415)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-20 11:12:15 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [MaintenanceTimer-7-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+2025-01-20 11:15:22 [restartedMain] INFO  c.M.MusicManagerApplication - Starting MusicManagerApplication using Java 17.0.12 on LAPTOP-ICGVSVEA with PID 10004 (C:\Users\ycode\Streamify\back-end\target\classes started by ycode in C:\Users\ycode\Streamify\back-end)
+2025-01-20 11:15:22 [restartedMain] DEBUG c.M.MusicManagerApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2025-01-20 11:15:22 [restartedMain] INFO  c.M.MusicManagerApplication - The following 1 profile is active: "prod"
+2025-01-20 11:15:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-01-20 11:15:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 163 ms. Found 4 MongoDB repository interfaces.
+2025-01-20 11:15:24 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-20 11:15:24 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-20 11:15:24 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-01-20 11:15:24 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-20 11:15:24 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2002 ms
+2025-01-20 11:15:24 [restartedMain] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.12+7"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@4b15dd3a], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@3e04c69a]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@48768c0], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2025-01-20 11:15:24 [cluster-ClusterId{value='678e223cd6353c0a17c06832', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:29, serverValue:29}] to localhost:27017
+2025-01-20 11:15:24 [cluster-ClusterId{value='678e223cd6353c0a17c06832', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=948200}
+2025-01-20 11:15:24 [cluster-rtt-ClusterId{value='678e223cd6353c0a17c06832', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:30, serverValue:30}] to localhost:27017
+2025-01-20 11:15:24 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Chanson for index information.
+2025-01-20 11:15:24 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Role for index information.
+2025-01-20 11:15:24 [restartedMain] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:31, serverValue:31}] to localhost:27017
+2025-01-20 11:15:24 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.User for index information.
+2025-01-20 11:15:24 [restartedMain] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class com.MusicManager.model.Album for index information.
+2025-01-20 11:15:24 [restartedMain] DEBUG c.M.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-20 11:15:24 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-20 11:15:25 [restartedMain] DEBUG o.s.data.mongodb.core.MongoTemplate - Executing count: {} in collection: roles
+2025-01-20 11:15:25 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20e6c3d7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ee4f80d, org.springframework.security.web.context.SecurityContextPersistenceFilter@2671117f, org.springframework.security.web.header.HeaderWriterFilter@49fe513, org.springframework.security.web.authentication.logout.LogoutFilter@7eedb9b, com.MusicManager.security.JwtAuthenticationFilter@4c304f81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@264c73af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d80bd08, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51df1d6e, org.springframework.security.web.session.SessionManagementFilter@48a78d27, org.springframework.security.web.access.ExceptionTranslationFilter@1ba363d5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f19fcfa]
+2025-01-20 11:15:26 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-20 11:15:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-01-20 11:15:26 [restartedMain] INFO  c.M.MusicManagerApplication - Started MusicManagerApplication in 3.771 seconds (JVM running for 6273.782)
+2025-01-20 11:15:26 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
