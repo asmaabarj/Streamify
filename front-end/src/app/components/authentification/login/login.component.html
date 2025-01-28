@@ -1,0 +1,70 @@
+<div class="relative px-3 md:px-6  flex items-center justify-center">
+  <!-- Header -->
+  <div class="w-full max-w-md">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl md:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-spotify-green via-green-400 to-blue-500 bg-clip-text text-transparent">
+        Connexion
+      </h1>
+      <p class="text-gray-400 text-base md:text-lg">Bienvenue sur MusicStreams</p>
+    </div>
+
+    <!-- Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" 
+          class="bg-black/40 backdrop-blur-xl rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-2xl border border-white/5">
+      
+      <!-- Login -->
+      <div class="mb-6 group">
+        <label class="inline-flex items-center space-x-2 text-gray-300 text-sm font-medium mb-2 group-hover:text-spotify-green transition-colors">
+          <mat-icon class="text-gray-400 group-hover:text-spotify-green transition-colors">person</mat-icon>
+          <span>Login</span>
+        </label>
+        <input formControlName="login" 
+               type="text"
+               class="w-full bg-white/5 text-white px-4 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-spotify-green border-0 placeholder-gray-500 transition-all hover:bg-white/10"
+               [ngClass]="{'ring-2 ring-red-500': loginControl?.invalid && loginControl?.touched}"
+               placeholder="Entrez votre login" />
+        <div class="mt-1 text-sm" *ngIf="loginControl?.touched">
+          <p class="text-red-500" *ngIf="loginControl?.errors?.['required']">Le login est requis</p>
+          <p class="text-red-500" *ngIf="loginControl?.errors?.['minlength']">Le login doit contenir au moins 3 caractères</p>
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div class="mb-8 group">
+        <label class="inline-flex items-center space-x-2 text-gray-300 text-sm font-medium mb-2 group-hover:text-spotify-green transition-colors">
+          <mat-icon class="text-gray-400 group-hover:text-spotify-green transition-colors">lock</mat-icon>
+          <span>Mot de passe</span>
+        </label>
+        <div class="relative">
+          <input formControlName="password" 
+                 [type]="showPassword ? 'text' : 'password'"
+                 class="w-full bg-white/5 text-white px-4 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-spotify-green border-0 placeholder-gray-500 transition-all hover:bg-white/10"
+                 [ngClass]="{'ring-2 ring-red-500': passwordControl?.invalid && passwordControl?.touched}"
+                 placeholder="Entrez votre mot de passe" />
+          <button type="button" 
+                  (click)="togglePasswordVisibility()"
+                  class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-spotify-green transition-colors">
+            <mat-icon>{{ showPassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+          </button>
+        </div>
+        <div class="mt-1 text-sm" *ngIf="passwordControl?.touched">
+          <p class="text-red-500" *ngIf="passwordControl?.errors?.['required']">Le mot de passe est requis</p>
+          <p class="text-red-500" *ngIf="passwordControl?.errors?.['minlength']">Le mot de passe doit contenir au moins 6 caractères</p>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div *ngIf="error" class="mb-4 p-3 rounded-lg bg-red-500/10 text-red-500 text-sm">
+        {{ error }}
+      </div>
+      <button type="submit" 
+              [disabled]="!loginForm.valid"
+              class="w-full bg-gradient-to-r from-spotify-green to-green-500 hover:from-spotify-green-hover hover:to-green-400 text-white font-bold py-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed">
+        <span class="flex items-center justify-center space-x-2">
+          <mat-icon>login</mat-icon>
+          <span>Se connecter</span>
+        </span>
+      </button>
+    </form>
+  </div>
+</div>

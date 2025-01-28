@@ -1,0 +1,146 @@
+<div class="relative px-3 md:px-6">
+  <!-- Header -->
+  <div class="max-w-6xl mx-auto mb-6 md:mb-12 text-center">
+    <h1 class="text-3xl md:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-spotify-green via-green-400 to-blue-500 bg-clip-text text-transparent">
+      {{ isEditMode ? 'Modifier la piste' : 'Nouvelle piste' }}
+    </h1>
+    <p class="text-gray-400 text-base md:text-lg">Créez quelque chose d'extraordinaire</p>
+  </div>
+
+  <!-- Form -->
+  <div class="w-full max-w-4xl mx-auto">
+    <form [formGroup]="trackForm" (ngSubmit)="submit()" 
+          class="bg-black/40 backdrop-blur-xl rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-2xl border border-white/5">
+      
+      <!-- Grid sections -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
+        <!-- Title & Artist Section -->
+        <div class="group">
+          <label class="inline-flex items-center space-x-2 text-gray-300 text-sm font-medium mb-2 group-hover:text-spotify-green transition-colors">
+            <i class="fas fa-music"></i>
+            <span>Titre</span>
+          </label>
+          <input formControlName="title" 
+                 class="w-full bg-white/5 text-white px-4 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-spotify-green border-0 placeholder-gray-500 transition-all hover:bg-white/10" 
+                 [ngClass]="{'ring-2 ring-red-500': titleControl?.invalid && titleControl?.touched}"
+                 placeholder="Le nom de votre chef-d'œuvre" />
+          <div class="mt-1 text-sm" *ngIf="titleControl?.touched">
+            <p class="text-red-500" *ngIf="titleControl?.errors?.['required']">Le titre est requis</p>
+            <p class="text-red-500" *ngIf="titleControl?.errors?.['maxlength']">Le titre ne doit pas dépasser 50 caractères</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <label class="inline-flex items-center space-x-2 text-gray-300 text-sm font-medium mb-2 group-hover:text-spotify-green transition-colors">
+            <i class="fas fa-user"></i>
+            <span>Artiste</span>
+          </label>
+          <input formControlName="artist" 
+                 class="w-full bg-white/5 text-white px-4 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-spotify-green border-0 placeholder-gray-500 transition-all hover:bg-white/10"
+                 [ngClass]="{'ring-2 ring-red-500': artistControl?.invalid && artistControl?.touched}"
+                 placeholder="Votre nom d'artiste" />
+          <div class="mt-1 text-sm" *ngIf="artistControl?.touched">
+            <p class="text-red-500" *ngIf="artistControl?.errors?.['required']">L'artiste est requis</p>
+            <p class="text-red-500" *ngIf="artistControl?.errors?.['minlength']">Le nom d'artiste doit contenir au moins 2 caractères</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="group mb-8">
+        <label class="inline-flex items-center space-x-2 text-gray-300 text-sm font-medium mb-2 group-hover:text-spotify-green transition-colors">
+          <i class="fas fa-quote-left"></i>
+          <span>Description</span>
+        </label>
+        <textarea formControlName="description" 
+                  class="w-full bg-white/5 text-white px-4 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-spotify-green border-0 placeholder-gray-500 transition-all hover:bg-white/10 h-32 resize-none"
+                  [ngClass]="{'ring-2 ring-red-500': descriptionControl?.invalid && descriptionControl?.touched}"
+                  placeholder="Racontez l'histoire de votre musique..."></textarea>
+        <div class="mt-1 text-sm">
+          <p class="text-red-500" *ngIf="descriptionControl?.errors?.['maxlength']">La description ne doit pas dépasser 200 caractères</p>
+        </div>
+      </div>
+
+      <!-- Category -->
+      <div class="mb-8 group form-group">
+        <label class="inline-flex items-center space-x-2 text-gray-300 text-sm font-medium mb-2 group-hover:text-spotify-green transition-colors">
+          <i class="fas fa-tag"></i>
+          <span>Catégorie</span>  
+        </label>
+        <div class="relative">
+          <select formControlName="category" 
+                  class="w-full bg-spotify-highlight text-white px-4 py-3.5 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-spotify-green/50 border-0 transition-all">
+            <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+          </select>
+          <i class="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-spotify-green pointer-events-none"></i>
+        </div>
+      </div>
+
+      <!-- Upload Section -->
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <!-- Audio Upload -->
+        <div class="group">
+          <label class="inline-flex items-center space-x-2 text-gray-300 text-sm font-medium mb-2 group-hover:text-spotify-green transition-colors">
+            <i class="fas fa-headphones"></i>
+            <span>Audio</span>
+          </label>
+          <input type="file" 
+                 #audioFileInput 
+                 id="audioFileInput"
+                 (change)="onAudioFileChange($event)" 
+                 accept="audio/*" 
+                 class="hidden" />
+          <button type="button" 
+                  (click)="audioFileInput.click()"
+                  class="w-full bg-gradient-to-r from-spotify-green/10 to-blue-500/10 hover:from-spotify-green/20 hover:to-blue-500/20 text-white px-4 py-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-3 group">
+            <i class="fas fa-cloud-upload-alt text-xl group-hover:scale-110 transition-transform"></i>
+            <span>{{ audioFileName || 'Choisir un fichier' }}</span>
+          </button>
+        </div>
+
+        <!-- Image Upload -->
+        <div class="group">
+          <label class="inline-flex items-center space-x-2 text-gray-300 text-sm font-medium mb-2 group-hover:text-spotify-green transition-colors">
+            <i class="fas fa-image"></i>
+            <span>Cover ( optionnel )</span>
+          </label>
+          <input type="file" 
+                 #imageFileInput 
+                 id="imageFileInput"
+                 (change)="onImageFileChange($event)" 
+                 accept="image/*" 
+                 class="hidden" />
+          <button type="button" 
+                  (click)="imageFileInput.click()"
+                  class="w-full bg-gradient-to-r from-blue-500/10 to-green-500/10 hover:from-blue-500/20 hover:to-green-500/20 text-white px-4 py-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-3 group">
+            <i class="fas fa-cloud-upload-alt text-xl group-hover:scale-110 transition-transform"></i>
+            <span>{{ imageFileName || 'Choisir une image' }}</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Responsive buttons -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+        <!-- Submit Button -->
+        <button type="submit" 
+        [disabled]="!isFormValid"
+        class="w-full bg-gradient-to-r from-spotify-green to-green-500 hover:from-spotify-green-hover hover:to-green-400 text-white font-bold py-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed group">
+          <span class="flex items-center justify-center space-x-2">
+            <i class="fas fa-sparkles group-hover:rotate-12 transition-transform"></i>
+            <span>{{ isEditMode ? 'Sauvegarder les modifications' : 'Créer la piste' }}</span>
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Toast - Responsive -->
+<div class="fixed bottom-4 right-4 md:bottom-6 md:right-6">
+  <div *ngIf="showSuccessToast" 
+       class="bg-gradient-to-r from-spotify-green to-blue-500 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center space-x-3 animate-fade-in-up">
+    <i class="fas fa-check-circle text-2xl"></i>
+    <span class="font-medium">Piste sauvegardée avec succès!</span>
+  </div>
+</div>
+
